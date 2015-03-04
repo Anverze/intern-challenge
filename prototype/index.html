@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<title>Trainee</title>
+	</head>
+
+	<body>
+		<div id="cabeca">
+            <img src="../images/logo-ca.png" width="110" height="14" alt="">
+        </div>
+
+        <div class="container">
+            <ul class="breadcomb">
+                <li class="sublinhado">Início</li>
+                <span class="divider">></span>
+                <li class="sublinhado">Conta Bancária</li>
+                <span class="divider">></span>
+                <li>Nova</li>
+            </ul>
+        </div>
+
+        <div class="corpo">
+
+            <div class="conta">
+                <div class="conteudo">
+                    <h3>CONTA BANCÁRIA</h3>
+                </div>
+                
+                <div class="dados">
+                    <div class="nomeB">
+                        <label for="nomeBanco">
+                            <span id="nomeBanco_rotulo">Nome do Banco</span>
+                            <input class="caixa" text="text" name="nomeBanco" value="Digite aqui o nome do banco" size="45" maxlenght="40" class="nomeBanco" managed="true" behaveas="text">
+                        </label>
+                    </div>
+                    <div class="tipoC">
+                        <label for="tipoConta">
+                            <span id="tipoConta_rotulo">Tipo de conta</span>
+                            <div class="radioConta">
+                                <input type="radio" name="radioConta" value="fisica"><span class="radioB"> Pessoa física</span> </>
+                                <input class="margemL" type="radio" name="radioConta" value="juridica"><span class="radioB"> Pessoa jurídica </span></>
+                            </div>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="descri">
+                    <label for="descricao">
+                        <span id="descricao_rotulo">Descrição</span>
+                        <input class="desc" text="text" name="descricao" value="Digite aqui uma curta descrição para o banco" size="80" maxlenght="150" class="descricaoT" managed="true" behaveas="text">
+                    </label>
+                </div>
+
+                <div class="dadosInf">
+                    <div class="msg">
+                        <span>Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</span>
+                    </div>
+                    <div class="dadosInf2">
+                        <div class="saldo">
+                            <label for="saldoInicial">
+                                <span id="saldoInicial_rotulo">Saldo</span>
+                                <input class="saldoI" text="text" name="saldoInicial" value="Informe aqui o valor do saldo inicial" size="48" maxlenght="40" class="saldoInicial" managed="true" behaveas="text">
+                            </label>
+                        </div>
+                        <div class="data">
+                            <label for="dataC">
+                                <span id="dataC_rotulo">Data</span>
+                                <input class="dataI" text="text" name="dataC" value="Informe aqui a data do saldo inicial" size="48" maxlenght="40" class="dataC" managed="true" behaveas="text">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botoes">
+                <button class="cancel">Cancelar</button>
+                <button class="save">Salvar</button>
+                <button class="saveAdd">Salvar esta conta e adicionar outra</button>
+            </div>
+        </div>
+		<div id="rodape">
+            <img id="foot" src="../images/logo-ca-footer.png" width="111" height="14" alt="">
+        </div>
+	</body>
+
+</html>

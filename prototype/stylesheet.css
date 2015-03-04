@@ -1,0 +1,363 @@
+body {
+    background-color: #f1f4f9;
+}
+
+* {
+    font-family: "proximanova-regular";
+}
+
+input {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 7px;
+    color: #c9d3dd;
+}
+
+#cabeca {
+    z-index: 1;
+	position: fixed;
+	width: 100%;
+	margin-top: -50px;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    margin-right: -10px;
+	height: 50px;
+	background-color: #2687e9;
+    background-clip: padding-box;
+    float: right;
+
+}
+
+.container {
+    background-color: #fcfdfe;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 90px;
+}
+
+.breadcomb {
+    list-style: none;
+    padding: 20px 0;
+    font-size: 12px;
+    margin-left: 482px;
+    padding-top: 36px;
+}
+
+.sublinhado {
+    text-decoration: underline;
+    color: #0088cc;
+}
+
+.divider {
+    padding: 5px;
+    color: #ccc;
+}
+
+li {
+    display: inline;
+}
+
+div img {
+    margin-left: 482px;
+    margin-top: 18px;
+
+}
+
+.corpo {
+	position: relative;
+    float: center;
+	margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 1.3px;
+    margin-right: -6px;
+    width: 100%;
+	height: 830px;
+	background-color: #fcfdfe;
+    color: #395a7a;
+	clear: both;
+}
+
+.conta {
+    height: 620px;
+    width: 940px;
+    /*margin-top: 100px;*/
+    margin-left: 482px;
+    margin-bottom: 38px;
+    margin-top: -3px;
+    background-color: #ffffff;
+    border: 1px solid #c9d3dd;
+    clear: both;
+}
+
+div div div h3 {
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 19px;
+    color: #395a7a;
+}
+
+.conteudo {
+    padding: 10px 20px 20px 20px;
+    display: table;
+}
+
+.dados {
+    padding: 10px 20px 20px 20px;
+    display: table;
+    border-top: 2px solid #f1f4f9;
+    width: 780px;
+    margin-left: 80px;
+    margin-top: 7px;
+    padding: 40px 0 15px;
+}
+
+.nomeB {
+    width: 260px;
+    float: left;
+}
+
+label {
+    display: block;
+
+}
+
+.caixa {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 290px;
+    border-radius: 5px;
+    border: 1px solid #c9d3dd;
+    opacity: 100%;
+}
+
+
+
+#nomeBanco_rotulo{
+    display: table;
+    font-size: 14px;
+    margin-left: -2px;
+    margin-top: -5px;
+}
+
+.nomeBanco {
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+#tipoConta_rotulo{
+    display: table;
+    font-size: 14px;
+    margin-left: -3px;
+    margin-top: -7px;
+    margin-bottom: 28px;
+}
+
+.tipoC {
+    float: right;
+    margin-right: 192px;
+    margin-top: 3px;
+}
+
+.margemL {
+    margin-left: 55px;
+}
+
+.radioB {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.radioConta {
+    margin-left: -8px;
+}
+
+
+#descricao_rotulo{
+    display: table;
+    font-size: 14px;
+    margin-left: -2px;
+    margin-top: -3px;
+}
+
+.descri {
+    display: table;
+    width: 670px;
+    margin-left: 80px; 
+    margin-top: 6px; 
+}
+
+.desc {
+    margin-top: 17px;
+    height: 35px;
+    width: 532px;
+    border-radius: 5px;
+    border: 1px solid #c9d3dd;
+    opacity: 100%;
+}
+
+.descricaoT {
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+
+.dadosInf {
+    margin-top: 40px;
+    padding: 10px 20px 20px 20px;
+    display: table;
+    border-top: 2px solid #f1f4f9;
+    width: 780px;
+    margin-left: 80px;
+    padding: 40px 0 15px;
+}
+
+.msg{
+    display: table;
+    font-size: 14px;
+    margin-left: -2px;
+    margin-top: -5px;
+    margin-bottom: 28px;
+}
+
+.saldo {
+    width: 240px;
+    float: left;
+}
+
+#saldoInicial_rotulo{
+    display: table;
+    font-size: 14px;
+    margin-left: -2px;
+    margin-top: -3px;
+}
+
+.saldoI {
+    margin-top: 17px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 291px;
+    border-radius: 5px;
+    border: 1px solid #c9d3dd;
+    opacity: 100%;
+}
+
+.saldoInicial {
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.data {
+    width: 280px;
+    float: right;
+    margin-right: 180px;
+}
+
+#dataC_rotulo{
+    display: table;
+    font-size: 14px;
+    margin-left: -2px;
+    margin-top: -3px;
+}
+
+.dataI {
+    margin-top: 17px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 291px;
+    border-radius: 5px;
+    border: 1px solid #c9d3dd;
+    opacity: 100%;
+}
+
+.dataC {
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+@font-face {
+font-family: 'proximanova-regular';
+src: url('../webfonts/proximanova-regular.eot');
+src: url('../webfonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+url('../webfonts/proximanova-regular.woff') format('woff'),
+url('../webfonts/proximanova-regular.ttf') format('truetype'),
+url('../webfonts/proximanova-regular.svg#proximanova-regular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+.botoes {
+    height: 40px;
+    width: 940px;
+    /*margin-top: 100px;*/
+    margin-left: 482px;
+    /*background-color: #ffffff;*/
+    clear: both;
+}
+
+.cancel {
+    float: left;
+    height: 40px;
+    width: 140px;
+    background-color: #fcfdfe;
+    font-size: 14px;
+    color: #395a7a;
+    border: 1px solid #c9d3dd;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.save {
+    float: right;
+    height: 40px;
+    width: 142px;
+    background-color: #4aba58;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #43820a;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.saveAdd {
+    float: right;
+    height: 40px;
+    width: 302px;
+    margin-right: 18px;
+    background-color: #fcfdfe;
+    font-size: 14px;
+    color: #395a7a;
+    border: 1px solid #c9d3dd;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+#rodape {
+	position: relative;
+	height: 50px;
+    width: 100%;
+	background-color: #fcfdfe;
+	clear: both;
+	color: #ffffff;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -90px;
+    border-top: 1.5px solid #c9d3dd;
+}
+
+#foot {
+    margin-left: 895px;
+    margin-top: 19px;
+}
