@@ -1,9 +1,20 @@
+@font-face {
+font-family: 'proximanova-regular';
+src: url('../webfonts/proximanova-regular.eot');
+src: url('../webfonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+url('../webfonts/proximanova-regular.woff') format('woff'),
+url('../webfonts/proximanova-regular.ttf') format('truetype'),
+url('../webfonts/proximanova-regular.svg#proximanova-regular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
 body {
     background-color: #f1f4f9;
 }
 
 * {
-    font-family: "proximanova-regular";
+    font-family: "proximanova-regular", sans-serif;
 }
 
 input {
@@ -13,39 +24,52 @@ input {
     color: #c9d3dd;
 }
 
-#cabeca {
+.all {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.head-div {
     z-index: 1;
-	position: fixed;
-	width: 100%;
-	margin-top: -50px;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
     margin-left: 0px;
     margin-bottom: 40px;
     margin-right: -10px;
-	height: 50px;
-	background-color: #2687e9;
-    background-clip: padding-box;
-    float: right;
+    height: 50px;
+    background-color: #2687e9;
+}
 
+.head-image-div {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .container {
     background-color: #fcfdfe;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
+    margin: 0 auto;
+    padding-top: 36px;
     width: 100%;
     height: 90px;
+}
+
+.container-main {
+    width: 940px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .breadcomb {
     list-style: none;
     padding: 20px 0;
     font-size: 12px;
-    margin-left: 482px;
-    padding-top: 36px;
+    background: transparent;
+    margin-top: 20px;
 }
 
-.sublinhado {
+.line {
     text-decoration: underline;
     color: #0088cc;
 }
@@ -59,51 +83,46 @@ li {
     display: inline;
 }
 
-div img {
-    margin-left: 482px;
+.head-image {
+    margin-left: -10px;
     margin-top: 18px;
 
 }
 
-.corpo {
+.all-body {
 	position: relative;
-    float: center;
 	margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 1.3px;
     margin-right: -6px;
     width: 100%;
-	height: 830px;
+	height: 740px;
 	background-color: #fcfdfe;
     color: #395a7a;
-	clear: both;
 }
 
-.conta {
+.account {
     height: 620px;
     width: 940px;
-    /*margin-top: 100px;*/
-    margin-left: 482px;
-    margin-bottom: 38px;
-    margin-top: -3px;
+    margin: 0 auto;
     background-color: #ffffff;
     border: 1px solid #c9d3dd;
-    clear: both;
+    padding-left: 15px;
 }
 
-div div div h3 {
+h3 {
     margin-top: 60px;
     margin-left: 60px;
     font-size: 19px;
     color: #395a7a;
 }
 
-.conteudo {
+.content {
     padding: 10px 20px 20px 20px;
     display: table;
 }
 
-.dados {
+.account-bank-div {
     padding: 10px 20px 20px 20px;
     display: table;
     border-top: 2px solid #f1f4f9;
@@ -113,7 +132,7 @@ div div div h3 {
     padding: 40px 0 15px;
 }
 
-.nomeB {
+.bank-name-div {
     width: 260px;
     float: left;
 }
@@ -123,7 +142,7 @@ label {
 
 }
 
-.caixa {
+.box {
     margin-top: 18px;
     margin-bottom: 20px;
     height: 35px;
@@ -135,21 +154,21 @@ label {
 
 
 
-#nomeBanco_rotulo{
+.bankName-label{
     display: table;
     font-size: 14px;
     margin-left: -2px;
     margin-top: -5px;
 }
 
-.nomeBanco {
+.bankName {
     border-radius: 3px;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: right;
 }
 
-#tipoConta_rotulo{
+.account-type-label{
     display: table;
     font-size: 14px;
     margin-left: -3px;
@@ -157,41 +176,41 @@ label {
     margin-bottom: 28px;
 }
 
-.tipoC {
+.account-type-div {
     float: right;
     margin-right: 192px;
     margin-top: 3px;
 }
 
-.margemL {
+.spacing-left-person {
     margin-left: 55px;
 }
 
-.radioB {
+.person-radio {
     font-size: 14px;
     margin-top: -10px;
 }
 
-.radioConta {
+.account-radio {
     margin-left: -8px;
 }
 
 
-#descricao_rotulo{
+.description-label {
     display: table;
     font-size: 14px;
     margin-left: -2px;
     margin-top: -3px;
 }
 
-.descri {
+.description-div {
     display: table;
     width: 670px;
     margin-left: 80px; 
     margin-top: 6px; 
 }
 
-.desc {
+.description-input {
     margin-top: 17px;
     height: 35px;
     width: 532px;
@@ -200,15 +219,7 @@ label {
     opacity: 100%;
 }
 
-.descricaoT {
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: right;
-}
-
-
-.dadosInf {
+.balance-date-div {
     margin-top: 40px;
     padding: 10px 20px 20px 20px;
     display: table;
@@ -218,7 +229,7 @@ label {
     padding: 40px 0 15px;
 }
 
-.msg{
+.message{
     display: table;
     font-size: 14px;
     margin-left: -2px;
@@ -226,19 +237,19 @@ label {
     margin-bottom: 28px;
 }
 
-.saldo {
+.balance {
     width: 240px;
     float: left;
 }
 
-#saldoInicial_rotulo{
+.initial-balance-label{
     display: table;
     font-size: 14px;
     margin-left: -2px;
     margin-top: -3px;
 }
 
-.saldoI {
+.balance-input {
     margin-top: 17px;
     margin-bottom: 20px;
     height: 35px;
@@ -248,27 +259,27 @@ label {
     opacity: 100%;
 }
 
-.saldoInicial {
+.initial-balance {
     border-radius: 3px;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: right;
 }
 
-.data {
+.date {
     width: 280px;
     float: right;
     margin-right: 180px;
 }
 
-#dataC_rotulo{
+.date-span{
     display: table;
     font-size: 14px;
     margin-left: -2px;
     margin-top: -3px;
 }
 
-.dataI {
+.date-input {
     margin-top: 17px;
     margin-bottom: 20px;
     height: 35px;
@@ -278,32 +289,20 @@ label {
     opacity: 100%;
 }
 
-.dataC {
+.date-label {
     border-radius: 3px;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: right;
 }
 
-@font-face {
-font-family: 'proximanova-regular';
-src: url('../webfonts/proximanova-regular.eot');
-src: url('../webfonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-url('../webfonts/proximanova-regular.woff') format('woff'),
-url('../webfonts/proximanova-regular.ttf') format('truetype'),
-url('../webfonts/proximanova-regular.svg#proximanova-regular') format('svg');
-font-weight: normal;
-font-style: normal;
-}
 
-
-.botoes {
+.buttons {
     height: 40px;
     width: 940px;
-    /*margin-top: 100px;*/
     margin-left: 482px;
-    /*background-color: #ffffff;*/
-    clear: both;
+    margin: 0 auto;
+    padding-top: 35px;
 }
 
 .cancel {
@@ -316,6 +315,7 @@ font-style: normal;
     border: 1px solid #c9d3dd;
     border-radius: 3px;
     text-align: center;
+    opacity: 0.75;
 }
 
 .save {
@@ -328,9 +328,10 @@ font-style: normal;
     border: 1px solid #43820a;
     border-radius: 3px;
     text-align: center;
+    opacity: 0.75;
 }
 
-.saveAdd {
+.save-add {
     float: right;
     height: 40px;
     width: 302px;
@@ -341,23 +342,25 @@ font-style: normal;
     border: 1px solid #c9d3dd;
     border-radius: 3px;
     text-align: center;
+    opacity: 0.75;
 }
 
 
-#rodape {
+.foot-div {
 	position: relative;
-	height: 50px;
+	height: 60px;
     width: 100%;
 	background-color: #fcfdfe;
-	clear: both;
 	color: #ffffff;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: -90px;
     border-top: 1.5px solid #c9d3dd;
 }
 
-#foot {
-    margin-left: 895px;
+.foot-image-div {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.foot {
+    margin-left: 45%;
     margin-top: 19px;
 }

@@ -3,85 +3,94 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+        <style type="text/css"> @charset "UTF-8"; </style>
 		<title>Trainee</title>
 	</head>
 
 	<body>
-		<div id="cabeca">
-            <img src="../images/logo-ca.png" width="110" height="14" alt="">
-        </div>
-
-        <div class="container">
-            <ul class="breadcomb">
-                <li class="sublinhado">Início</li>
-                <span class="divider">></span>
-                <li class="sublinhado">Conta Bancária</li>
-                <span class="divider">></span>
-                <li>Nova</li>
-            </ul>
-        </div>
-
-        <div class="corpo">
-
-            <div class="conta">
-                <div class="conteudo">
-                    <h3>CONTA BANCÁRIA</h3>
+		<div class="all">
+            <div class="head-div">
+                <div class="head-image-div">
+                    <img class="head-image" src="../images/logo-ca.png" width="110" height="15" alt="" />
                 </div>
-                
-                <div class="dados">
-                    <div class="nomeB">
-                        <label for="nomeBanco">
-                            <span id="nomeBanco_rotulo">Nome do Banco</span>
-                            <input class="caixa" text="text" name="nomeBanco" value="Digite aqui o nome do banco" size="45" maxlenght="40" class="nomeBanco" managed="true" behaveas="text">
-                        </label>
-                    </div>
-                    <div class="tipoC">
-                        <label for="tipoConta">
-                            <span id="tipoConta_rotulo">Tipo de conta</span>
-                            <div class="radioConta">
-                                <input type="radio" name="radioConta" value="fisica"><span class="radioB"> Pessoa física</span> </>
-                                <input class="margemL" type="radio" name="radioConta" value="juridica"><span class="radioB"> Pessoa jurídica </span></>
-                            </div>
-                        </label>
+            </div>
+
+            <div class="container">
+                <div class="container-main">
+                    <ul class="breadcomb">
+                        <li class="line">Início</li>
+                        <span class="divider">></span>
+                        <li class="line">Conta Bancária</li>
+                        <span class="divider">></span>
+                        <li>Nova</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="all-body">
+
+                <div class="account">
+                    <div class="content">
+                        <h3>CONTA BANCÁRIA</h3>
                     </div>
                     
-                </div>
-                <div class="descri">
-                    <label for="descricao">
-                        <span id="descricao_rotulo">Descrição</span>
-                        <input class="desc" text="text" name="descricao" value="Digite aqui uma curta descrição para o banco" size="80" maxlenght="150" class="descricaoT" managed="true" behaveas="text">
-                    </label>
-                </div>
-
-                <div class="dadosInf">
-                    <div class="msg">
-                        <span>Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</span>
-                    </div>
-                    <div class="dadosInf2">
-                        <div class="saldo">
-                            <label for="saldoInicial">
-                                <span id="saldoInicial_rotulo">Saldo</span>
-                                <input class="saldoI" text="text" name="saldoInicial" value="Informe aqui o valor do saldo inicial" size="48" maxlenght="40" class="saldoInicial" managed="true" behaveas="text">
+                    <div class="account-bank-div">
+                        <div class="bank-name-div">
+                            <label for="bankName">
+                                <span class="bankName-label">Nome do Banco</span>
+                                <input class="box" text="text" name="bankName" value="Digite aqui o nome do banco" size="45" maxlenght="40" class="bankName" managed="true" behaveas="text" />
                             </label>
                         </div>
-                        <div class="data">
-                            <label for="dataC">
-                                <span id="dataC_rotulo">Data</span>
-                                <input class="dataI" text="text" name="dataC" value="Informe aqui a data do saldo inicial" size="48" maxlenght="40" class="dataC" managed="true" behaveas="text">
+                        <div class="account-type-div">
+                            <label for="tipoConta">
+                                <span class="account-type-label">Tipo de conta</span>
+                                <div class="account-radio">
+                                    <input type="radio" name="account-radio" value="fisica" /><span class="person-radio"> Pessoa física</span>
+                                    <input class="spacing-left-person" type="radio" name="account-radio" value="juridica" /><span class="person-radio"> Pessoa jurídica </span>
+                                </div>
                             </label>
+                        </div>
+                        
+                    </div>
+                    <div class="description-div">
+                        <label for="description">
+                            <span class="description-label">Descrição</span>
+                            <input class="description-input" text="text" name="description" value="Digite aqui uma curta descrição para o banco" size="80" maxlenght="150" managed="true" behaveas="text" />
+                        </label>
+                    </div>
+
+                    <div class="balance-date-div">
+                        <div class="message">
+                            <span>Você deve optar por definir um saldo inicial. Este valor aparecerá como seu primeiro lançamento.</span>
+                        </div>
+                        <div>
+                            <div class="balance">
+                                <label for="initial-balance">
+                                    <span class="initial-balance-label">Saldo</span>
+                                    <input class="balance-input" text="text" name="initial-balance" value="Informe aqui o valor do saldo inicial" size="48" maxlenght="40" class="initial-balance" managed="true" behaveas="text" />
+                                </label>
+                            </div>
+                            <div class="date">
+                                <label for="date-label">
+                                    <span class="date-span">Data</span>
+                                    <input class="date-input" text="text" name="date-label" value="Informe aqui a data do saldo inicial" size="48" maxlenght="40" class="date-label" managed="true" behaveas="text" />
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="botoes">
-                <button class="cancel">Cancelar</button>
-                <button class="save">Salvar</button>
-                <button class="saveAdd">Salvar esta conta e adicionar outra</button>
+                <div class="buttons">
+                    <button type="submit" class="cancel">Cancelar</button>
+                    <button type="submit" class="save">Salvar</button>
+                    <button type="submit" class="save-add">Salvar esta conta e adicionar outra</button>
+                </div>
             </div>
-        </div>
-		<div id="rodape">
-            <img id="foot" src="../images/logo-ca-footer.png" width="111" height="14" alt="">
+    		<div class="foot-div">
+                <div class="foot-image-div">
+                    <img class="foot" src="../images/logo-ca-footer.png" width="111" height="14" alt="" />
+                </div>
+            </div>
         </div>
 	</body>
 
