@@ -61,7 +61,7 @@ input {
     margin: 0 auto;
 }
 
-.breadcomb {
+.breadcrumb {
     list-style: none;
     padding: 20px 0;
     font-size: 12px;
@@ -90,14 +90,14 @@ li {
 }
 
 .all-body {
-	position: relative;
-	margin-top: 0px;
+    position: relative;
+    margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 1.3px;
     margin-right: -6px;
     width: 100%;
-	height: 740px;
-	background-color: #fcfdfe;
+    height: 740px;
+    background-color: #fcfdfe;
     color: #395a7a;
 }
 
@@ -137,10 +137,7 @@ h3 {
     float: left;
 }
 
-label {
-    display: block;
 
-}
 
 .box {
     margin-top: 18px;
@@ -347,11 +344,11 @@ label {
 
 
 .foot-div {
-	position: relative;
-	height: 60px;
+    position: relative;
+    height: 60px;
     width: 100%;
-	background-color: #fcfdfe;
-	color: #ffffff;
+    background-color: #fcfdfe;
+    color: #ffffff;
     border-top: 1.5px solid #c9d3dd;
 }
 
